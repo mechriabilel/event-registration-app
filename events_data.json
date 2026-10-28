@@ -1,0 +1,28 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "name": "CI/CD Workshop",
+            "capacity": 2
+        },
+        {
+            "id": 2,
+            "name": "DevOps Class",
+            "capacity": 10
+        }
+    ],
+    "registrations": [
+        {
+            "id": 1,
+            "event_id": 1,
+            "attendee": "Sami"
+        },
+        {
+            "id": 2,
+            "event_id": 1,
+            "attendee": "Bilel"
+        }
+    ],
+    "next_event_id": 3,
+    "next_reg_id": 3
+}
