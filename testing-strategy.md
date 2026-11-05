@@ -1,25 +1,13 @@
-Testing Strategy & Delivery Path
+# Testing Strategy & Delivery Path - Checkpoint 3
 
-Overview
+## Overview
+This repository contains the web application and REST API implementation for **Project 3: Event Registration** with persistent Docker volumes and OpenAPI documentation.
 
-This repository contains the implementation for Project 3: Event Registration CLI as requested in the course.
+## Web Address & Documentation
+- **Web Interface (Forms)**: `http://localhost:8000`
+- **OpenAPI / Swagger UI Documentation**: `http://localhost:8000/docs`
 
-Local Execution & Automated Testing
-
-Install requirements:
-pip install -r requirements.txt
-
-Execute Automated Unit Tests (Capacity Limit constraint check):
-pytest test_events.py
-
-Docker Execution
-
-Build Container Image:
-docker build -t event-app .
-
-Run Container CLI:
-docker run --rm event-app event add --name "DevOps Class" --capacity 10
-docker run --rm event-app event list
-
-Run via Docker Compose:
-docker compose up
+## Exact Commands from a Fresh Checkout
+1. **Start Application (with Docker Compose & Persistent Volumes):**
+   ```bash
+   docker compose up --build -d
